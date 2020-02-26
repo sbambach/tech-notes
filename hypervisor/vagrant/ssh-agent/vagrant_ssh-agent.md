@@ -82,3 +82,21 @@ In case you already have private and public ssh-keys (not from putty!), copy the
 3) Reopen `git-bash` window
 4) You should be asked for your SSH key password for the first time.
 5) Test if your key is loaded by agent with: `ssh-add -l`
+
+## Test if you can login to GIT
+
+1) Open `git-bash` console
+2) For that easy test to work, you need a github account setup with SSH-key access!  
+   [See official docu on github](https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection).
+3) Try git access with ssh
+    ```bash
+    $ ssh -T git@github.com
+    Hi sbambach! You've successfully authenticated, but GitHub does not provide shell access.
+    ```
+4) Try git access with git
+    ```bash
+    $ git ls-remote ssh://git@github.com/sbambach/tech-notes.git
+    f080ca08b4fad1b38cdcff29e8d49a55a7c9994d        HEAD
+    f080ca08b4fad1b38cdcff29e8d49a55a7c9994d        refs/heads/master
+    ```
+5) Both commands should **not** ask for password!
