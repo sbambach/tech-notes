@@ -33,5 +33,5 @@ Login back to windows and test if your user now knows about the new permission.
       # Restart box
       vagrant halt ; vagrant up
       # Now test if symlinks are created
-      vagrant ssh -c 'cd /vagrant ; rm -f t.txt t_ln.txt ; touch t.txt ; ln -s t.txt t_lnn.txt ; test -f t.txt -a ! -L t.txt && echo "[OK] File exists." || echo "[ERROR] File does not exist" ; test -f t_ln.txt -a -L t_ln.txt && echo "[OK] Symlink exists." || echo "[ERROR] Symlink does not exist" ; rm -f t.txt t_ln.txt'
+      vagrant ssh -c 'cd /vagrant ; rm -f t.txt t_ln.txt ; touch t.txt ; ln -s t.txt t_ln.txt ; test -f t.txt -a ! -L t.txt && echo "[OK] File exists." || echo "[ERROR] File does not exist" ; test -f t_ln.txt -a -L t_ln.txt && echo "[OK] Symlink exists." || echo "[ERROR] Symlink does not exist" ; rm -f t.txt t_ln.txt'
       ```
