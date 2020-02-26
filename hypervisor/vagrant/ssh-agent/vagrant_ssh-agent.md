@@ -4,6 +4,13 @@
 
 [Download Git for windows](https://github.com/git-for-windows/git/releases/latest)
 
+## Program versions used
+
+- Windows 10 Pro (1909)
+- VirtualBox 6.0.16
+- vagrant 2.2.7
+- git-bash 2.25.1
+
 ## Activate ssh-agent forwarding within ssh client config
 
 1) Open `git-bash` console and create ssh dir: `mkdir ~/.ssh`

@@ -1,5 +1,12 @@
 # Symlink support for vagrant+Virtualbox on windows
 
+## Program versions used
+
+- Windows 10 Pro (1909)
+- VirtualBox 6.0.16
+- vagrant 2.2.7
+- git-bash 2.25.1
+
 ## Activate symlink support within windows (*SeCreateSymbolicLinkPrivilege*)
 
 See also official documentation about [Create symbolic links](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) in windows.
