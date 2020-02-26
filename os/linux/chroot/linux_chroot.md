@@ -39,4 +39,4 @@ mount --bind /run /mnt/run
 chroot /mnt /bin/bash
 ```
 
-Now you can e.g. update kernel drivers, fix bootloader or maybe just fix /etc/fstab.
+Now you can e.g. update initrd, grub, kernel drivers, ... or maybe just fix /etc/fstab.
