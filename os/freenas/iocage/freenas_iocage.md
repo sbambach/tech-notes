@@ -39,3 +39,11 @@ iocage exec ${JNAME} "portsnap fetch extract"
 iocage exec backup "pkg install -y py37-borgbackup rclone"
 iocage exec backup "sysrc fuse_load=\"YES\""
 ```
+
+## transmission
+
+```bash
+JNAME=torrent
+MACS="5480289de613 5480289de713"
+iocage fstab -a ${JNAME} /mnt/mypool/shares/download/Transmission /usr/local/etc/transmission/home/Downloads nullfs rw 0 0
+```
